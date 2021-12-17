@@ -4877,3 +4877,10 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
   display: flex;
   flex-direction: row;
 }
+#contact {
+  background-color: #28223a; }
+  #contact h2 {
+    color: #25b79f; }
+  #contact p {
+    color: #25b79f; }
+
