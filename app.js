@@ -83,13 +83,87 @@ taskappbtn.addEventListener('click', () => {
 
 });
 
+const managementBtn = document.getElementById('inventorybtn');
+// Add an event listener to the button for the lake home
+managementBtn.addEventListener('click', () => {
+  mainText.textContent = 'Tool and Material Management';
+  mainTextDescription1.textContent = 'Developed a state-of-the-art inventory management application integrating a comprehensive tool database with NFC technology. Each tool is equipped with an NFC chip (NFC-3513-rd/NFC-2004), while workers IDs utilize EM4100 technology. The system leverages the ACR122U NFC card reader/writer to log tool usage, ensuring accurate real-time tracking of which worker last used a tool. This innovation has significantly reduced tool loss, saving time and resources while enhancing accountability on-site.';
+  mainTextDescription2.textContent = 'Designed the application to streamline the process of tracking and managing tools and materials. Administrators can update tool status, monitor tool locations, and receive notifications when construction materials are depleted or when workers request new tools to be purchased. This feature-rich solution has dramatically improved the efficiency of material ordering and allocation, ensuring projects proceed without unnecessary delays.';
+  mainTextDescription3.textContent = 'The application’s back-end, hosted on AWS, ensures reliability and scalability for continuous operation. GitHub serves as the version control platform, with manual updates pulled to maintain stability. The robust design supports seamless integration with NFC devices, offering a smooth experience for workers and administrators alike while meeting industry standards for security and efficiency.';
+  mainTextDescription4.textContent = 'By maintaining a detailed record of tool usage and status, the application provides valuable insights into on-site operations. Administrators can make informed decisions, optimize resource allocation, and ensure tools are available when needed. Since implementation, the app has eliminated tool loss and substantially improved the workflow for ordering and managing construction materials, contributing to overall project success and cost efficiency.';
+    
+  mainImg.src = 'img/inventory2.png'; // Update the image source
+
+      // Make buttons disappear
+  const controlButtons = document.querySelectorAll('.controls .control');
+  controlButtons.forEach((btn) => {
+    btn.classList.add('deactive'); // Add the 'deactive' class to each button
+  });
+
+});
+
+const novarionBtn = document.getElementById('novarion-btn');
+// Add an event listener to the button for the lake home
+novarionBtn.addEventListener('click', () => {
+  mainText.textContent = 'Novarion Landing Page';
+  mainTextDescription1.textContent = 'Developed a sleek and responsive landing page for Novarion using HTML, CSS, and JavaScript. The design focuses on a clean layout and intuitive navigation, creating a professional online presence that effectively showcases the brand. Optimized for both desktop and mobile devices, the page ensures an excellent user experience across all platforms.';
+  mainTextDescription2.textContent = 'Integrated a PHP-based contact form to allow seamless communication between visitors and the Novarion team. The form is designed for easy use and securely handles inquiries, helping the company maintain strong connections with potential clients and partners.';
+  mainTextDescription3.textContent = 'Hosted on Cloudflare, the website benefits from enhanced performance, fast loading times, and high availability. The hosting setup also provides robust security features, ensuring the page is protected against potential threats while maintaining optimal uptime.';
+  mainTextDescription4.textContent = 'As a straightforward presentation page, the Novarion site emphasizes clarity and functionality. The minimalist approach ensures visitors can easily access key information about the brand, making it an ideal platform for building credibility and generating leads. This project highlights expertise in crafting user-focused web solutions that balance design and performance.';
+
+  mainImg.src = 'img/novarion.png'; // Update the image source
+
+      // Make buttons disappear
+  const controlButtons = document.querySelectorAll('.controls .control');
+  controlButtons.forEach((btn) => {
+    btn.classList.add('deactive'); // Add the 'deactive' class to each button
+  });
+
+});
+
+const TheriverBtn = document.getElementById('the-river-btn');
+// Add an event listener to the button for the lake home
+TheriverBtn.addEventListener('click', () => {
+  mainText.textContent = 'The River Chalet Website';
+  mainTextDescription1.textContent = 'Designed and developed a professional WordPress website for River Chalet, leveraging modern themes and plugins to create an intuitive and responsive user experience. The website effectively showcases the chalet s offerings, ensuring visitors can easily access information and interact with the brand.';
+  mainTextDescription2.textContent = 'Integrated key plugins such as Elementor for dynamic page building, 3D FlipBook: Dflip Lite for interactive visual presentations, and WPForms Lite for creating user-friendly contact forms. These plugins enhance the site s functionality while maintaining ease of use for both visitors and administrators.';
+  mainTextDescription3.textContent = 'Hosted the website on GlobeHosting to ensure fast loading times, improved security, and reliable performance. Features like Really Simple SSL were implemented to enhance site security, while WP Fastest Cache optimized loading speeds for a smooth user experience.';
+  mainTextDescription4.textContent = 'The website includes tools for backup and recovery using UpdraftPlus, ensuring data safety and easy maintenance.';
+
+
+  mainImg.src = 'img/theriver.png'; // Update the image source
+
+      // Make buttons disappear
+  const controlButtons = document.querySelectorAll('.controls .control');
+  controlButtons.forEach((btn) => {
+    btn.classList.add('deactive'); // Add the 'deactive' class to each button
+  });
+
+});
+
+
+const DmxBtn = document.getElementById('dmx-btn');
+// Add an event listener to the button for the lake home
+DmxBtn.addEventListener('click', () => {
+  mainText.textContent = 'DMX Construction';
+  mainTextDescription1.textContent = 'Designed and implemented the DMX business website using WordPress with Elementor as the primary page builder. The website features a clean, responsive design that adapts seamlessly across devices, offering an engaging experience for visitors while effectively showcasing the company’s offerings.';
+  mainTextDescription2.textContent = 'Integrated Premium Addons for Elementor to extend the site’s functionality with interactive features such as carousels, advanced sliders, and testimonials. Additionally, used the Elementor Header & Footer Builder to craft custom headers and footers tailored to the brand’s identity, providing a unique and cohesive look.';
+  mainTextDescription3.textContent = 'Implemented UpdraftPlus for scheduled backups, ensuring data safety and quick recovery in case of unforeseen events. The inclusion of the WordPress Importer allows seamless data migration and management, highlighting proficiency in maintaining and scaling WordPress websites.';
+  mainTextDescription4.textContent = 'The website is hosted on a robust WordPress-compatible environment, ensuring fast load times and consistent performance. The use of WPCode Lite enables quick customization with code snippets, further streamlining development and maintenance while ensuring scalability to accommodate future growth.';
+
+  mainImg.src = 'img/dmx.png'; // Update the image source
+
+      // Make buttons disappear
+  const controlButtons = document.querySelectorAll('.controls .control');
+  controlButtons.forEach((btn) => {
+    btn.classList.add('deactive'); // Add the 'deactive' class to each button
+  });
+
+});
 
 
 
-
-
-
-
+//go back
 (function () {
     [...document.querySelectorAll(".goback")].forEach(button => {
         button.addEventListener("click", function() {
