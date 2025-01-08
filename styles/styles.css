@@ -1007,3 +1007,25 @@ section {
 .hidden {
   display: none;
 }
+
+
+/* go back*/
+.goback {
+  display: flex;
+  text-align: left !important;
+}
+
+.goback img {
+height: 50px;
+margin-right: 100px;
+cursor: pointer;
+
+}
+
+#main-img{
+  width: 100%;
+}
+
+.main-title p{
+  text-align: left;
+}
