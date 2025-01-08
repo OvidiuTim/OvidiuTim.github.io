@@ -7,9 +7,7 @@
             document.getElementById(button.dataset.id).classList.add("active");
         })
     });
-    document.querySelector(".theme-btn").addEventListener("click", () => {
-        document.body.classList.toggle("light-mode");
-    })
+
 })();
 
 
@@ -69,7 +67,8 @@ const taskappbtn = document.getElementById('task-app-btn');
 // Add an event listener to the button for the lake home
 taskappbtn.addEventListener('click', () => {
     mainText.textContent = 'Task Management Application';
-    mainTextDescription1.textContent = 'Developed a full-stack Task Management application using Angular (frontend) and Django (backend). The platform allows users to log in and perform role-specific actions, such as creating accounts for team members (admin) and assigning tasks. Demonstrated expertise in implementing secure authentication and managing permissions with fine-grained control, ensuring a scalable and secure user experience.';    mainTextDescription2.textContent = 'One of the standout features of the website is its focus on showcasing the unique selling points of The Lake Home apartments. With a detailed presentation of the 81 available units, the website prominently features the remaining 14 apartments, creating a sense of urgency and exclusivity. Each listing highlights premium facilities, upscale amenities, and the picturesque location, helping visitors understand the unparalleled lifestyle offered by this residential complex.';
+    mainTextDescription1.textContent = 'Developed a full-stack Task Management application using Angular (frontend) and Django (backend). The platform allows users to log in and perform role-specific actions, such as creating accounts for team members (admin) and assigning tasks. Demonstrated expertise in implementing secure authentication and managing permissions with fine-grained control, ensuring a scalable and secure user experience.';    
+    mainTextDescription2.textContent = 'One of the standout features of the website is its focus on showcasing the unique selling points of The Lake Home apartments. With a detailed presentation of the 81 available units, the website prominently features the remaining 14 apartments, creating a sense of urgency and exclusivity. Each listing highlights premium facilities, upscale amenities, and the picturesque location, helping visitors understand the unparalleled lifestyle offered by this residential complex.';
     mainTextDescription2.textContent = 'Built a comprehensive system for assigning and managing tasks. Features include the ability to assign tasks to team members, attach photo proof for task completion, and approve or reassign tasks with updated descriptions. Angular s reactive forms and Django REST framework were used to ensure seamless task tracking and feedback workflows.';
     mainTextDescription3.textContent = 'Integrated real-time notifications to alert users of new tasks or task completion, enhancing team communication and productivity. Implemented an organizational chart feature to visualize team structure, leveraging Angular for dynamic rendering and Django for efficient backend data processing.';
     mainTextDescription4.textContent = 'Hosted the application on AWS to ensure high availability and scalability. Employed GitHub for version control and manual updates via server pulls, demonstrating proficiency in maintaining and deploying full-stack applications in production environments. Focused on delivering a user-friendly interface while maintaining robust backend functionality.';
@@ -83,6 +82,8 @@ taskappbtn.addEventListener('click', () => {
   });
 
 });
+
+
 
 
 
@@ -110,9 +111,6 @@ taskappbtn.addEventListener('click', () => {
         });
     });
 
-    // Toggle light mode
-    document.querySelector(".theme-btn").addEventListener("click", () => {
-        document.body.classList.toggle("light-mode");
-    });
+
 })();
 
